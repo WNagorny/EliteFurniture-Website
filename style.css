@@ -105,9 +105,26 @@ section {
 .shop-container {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 20px;
+	grid-gap: 40px;
 	max-width: 100%;
-	overflow: hidden;
+   margin: 0 auto;
+}
+
+.shop {
+	display: flex;
+	flex-direction: column;
+}
+
+.shop .heading {
+	text-align: center;
+	padding: 0 0 20px 0;
+}
+
+.heading span {
+	color: var(--main-color);
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	font-weight: 600;
 }
 
 .box {
@@ -115,14 +132,14 @@ section {
 	background-color: #fff;
 	padding: 10px;
 	border-radius: 5px;
+   max-width: 300px;
    box-shadow: 2px 10px 5px 0px rgba(0,0,0,0.25);
 }
 
 .box-img {
 	position: relative;
 	width: 100%;
-	height: 0;
-	padding-bottom: 100%; /* Maintain a square aspect ratio for the container */
+	padding-bottom: 100%;
 	overflow: hidden;
 }
 
@@ -146,24 +163,6 @@ section {
 		grid-template-columns: 1fr;
 	}
 }
-
-.shop {
-	display: flex;
-	flex-direction: column;
-}
-
-.heading {
-	text-align: center;
-	padding: 40px 0;
-}
-
-.heading span {
-	color: var(--main-color);
-	font-size: 1.2rem;
-	text-transform: uppercase;
-	font-weight: 600;
-}
-
 .title-price {
 	display: flex;
 	justify-content: space-between;
