@@ -247,3 +247,26 @@ section {
 	font-size: 1rem;
 	margin: 0.5rem 0 1.4rem;
 }
+
+/*------- Brands section  --------*/
+
+
+.brands-container{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px,auto));
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+	margin-top: 2rem;
+}
+
+.brands-container img{
+	width: 100px;
+	filter: grayscale(1);
+}
+
+.brands-container img:hover{
+	width: 100px;
+	filter: grayscale(0);
+}
+
